@@ -60,7 +60,7 @@ public class Page extends SettingsPage {
         a = createSeekBar("Alpha");
         seekBarList.addAll(Arrays.asList(r, b, g, a));
 
-        button.setText("Reset");
+        button.setText("\u21BA Reset");
         button.setTextColor(getColor(ctx));
         button.setOnClickListener(v -> {
             for (SeekBar e : seekBarList) {
@@ -83,7 +83,7 @@ public class Page extends SettingsPage {
 
         Button save = new Button(ctx);
         save.setTextColor(getColor(ctx));
-        save.setText("Save");
+        save.setText("\uD83D\uDCBE Save");
         save.setOnClickListener(v -> {
             setSettings();
             Toast.makeText(ctx, "Settings Saved", Toast.LENGTH_SHORT).show();
@@ -91,7 +91,7 @@ public class Page extends SettingsPage {
         });
 
         Button cancel = new Button(ctx);
-        cancel.setText("Cancel");
+        cancel.setText("\u2716 Cancel");
         cancel.setTextColor(getColor(ctx));
         cancel.setOnClickListener(v -> {
             close();
